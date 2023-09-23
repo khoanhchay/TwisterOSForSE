@@ -1,10 +1,11 @@
 # TwisterOSForSE
 I write this tutorial for future me or fellow Rock Pi 4 SE members who will be here in the future
 
-Using Twister OS Armbian 2.0.3
-Default Twister OS 2.0.3 is very hard to boot on SE, its DTB is different from 4B, i guess it causes the problem (i dunno)
+Using Twister OS Armbian 2.0.3.
+
+Default Twister OS 2.0.3 is very hard to boot on SE, its DTB is different from 4B, i guess it causes the problem (i dunno).
 https://forum.armbian.com/topic/27382-rock4-se-or-rock-pi-4-se-device-tree-overlays-do-not-look-correct/.
-So our first target will be moved kernel to **Armbian_21.08.1_Rockpro64_buster_current_5.10.60** or older 
+So our first target will be moved kernel to **Armbian_21.08.1_Rockpro64_buster_current_5.10.60** or older. 
 
 -- i dunno why but kernel 21.05.4 from default twister OS img boot usually failed, freeze on armbian logo, or right after cursor appear 
 
