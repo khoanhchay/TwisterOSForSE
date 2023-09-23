@@ -8,16 +8,20 @@ So our first target will be moved kernel to **Armbian_21.08.1_Rockpro64_buster_c
 
 -- i dunno why but kernel 21.05.4 from default twister OS img boot usually failed, freeze on armbian logo, or right after cursor appear 
 
-**1. First boot**
+**1. First boot**.
+
 First boot is really pain in the ass, unplug power if ur board is freezed til it fully boot, after that press "resize storage" app, it will reboot and ye, enjoy the pain again (gud luck)
 
-**2. Downgrade kernel**
+**2. Downgrade kernel**.
+
 Open armbian-config -> system -> other -> press spacebar to select -> choose kernel (Armbian_21.08.1_Rockpro64_buster_current_5.10.60 or older), wait til it reboot and tada, boot success rate become 100%
 
-**3. Freeze kernel**
+**3. Freeze kernel**.
+
 Open armbian-config -> system -> freeze, so u won't accident upgrade it again (it'll upgrade to newest version if u do "apt update/upgrade", i dunno why, but boot work fine so it's okay, i tried update without freeze and welcome back to step 1.)
 
-**4. Update and upgrade**
+**4. Update and upgrade**.
+
 **BEFORE UPDATE**, u should remove 2 conflicted packaged "linux-libc-dev:armhf" and "libc6-dev:armhf", use:
 
 sudo apt remove linux-libc-dev:armhf && libc6-dev:armhf
