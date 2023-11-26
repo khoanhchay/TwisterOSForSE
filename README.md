@@ -27,5 +27,12 @@ Open armbian-config -> system -> freeze, so u won't accident upgrade it again (i
 
 sudo apt remove linux-libc-dev:armhf && libc6-dev:armhf
 
-Now everything work fine ! i guess.
+Now everything work fine ! i guess (3.5mm jack doesn't work, bluetooth audio is broken).
 I know nothing about linux so if anything go wrong pls explain to me. Thanks for reading 
+
+**Update 1:** Don't use playonlinux to install **box86**, it will delete whole OS app, another stuff is okay.
+**Update 2:** Fix 3.5 audio jack (source: https://forum.armbian.com/topic/13707-rockpi4b-no-audio-from-35mm-jack/#comment-99217) (bluetooth audio is still broken)
+  armbian-config -> system -> hardware -> toggle rk3328-i2c0 -> restart
+  terminal time:
+  amixer set 'Right Headphone Mixer Right DAC' on
+  amixer set 'Left Headphone Mixer Left DAC' on
