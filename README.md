@@ -1,4 +1,4 @@
-# TwisterOSForSE
+# TwisterOS Setup For Rock 4SE
 I write this tutorial for future me or fellow Rock Pi 4 SE members who will be here in the future
 
 Using Twister OS Armbian 2.0.3.
